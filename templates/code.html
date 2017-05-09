@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="../static/css/bootstrap-yeti.css">
-   <title itemprop='name'>Download codes and packages written by Naeem Khoshnevis</title>
+   <title itemprop='name'>Codes and packages</title>
    
    <!-- get the path of the main_folder -->
 
@@ -78,6 +78,86 @@
  <div class="row">
   
   
+  
+      	    <!-- item starts -->
+	    
+	    <tr>
+            <td valign="top">
+   	    <a data-toggle="collapse" data-target="#collabrative_filter" style="padding: 0"> Collabrative Filter - Recommendation System based on Breese et al (1998) </a>
+            <br>
+            <br> <strong>Key Words(s): </strong> Collabrative filter, Recommendation system, Matlab <br>
+	    <hr>
+	    <div class="col-md-12" >
+            <div id=collabrative_filter class="collapse">
+	    <br>
+	    <strong> Summary: </strong><br>
+	    <p class="text-justify"> This package represents the implementation of the collaborative filtering algorithm of Breese et al (1998) in Matlab programming language.
+	    Based on input data, I compute the unique vector of users and movies. The movie-rating matrix (movie_rate_mat) which rows are representing users and columns are
+	    representing movies are being populated based on input data. I define a logical matrix (rated_mat) with 1 suggesting that specific user rated the movie and 0 otherwise.
+	    Mean value of all ratings per user is calculated. In order to compute the predicted vote (equation 1), I generate the user weight matrix (user_weight_mat) according to
+	    the equation 2.  This section is the most time consuming part of the code. Therefore, the code first looks for the data structure of the input file, if it finds it
+	    in the same folder, it will use it. Otherwise it will generate the necessary variables that will be time consuming.  The correlation between users is defined based on
+	    movies for which users have recorded votes. In practice I compute the all movies weight and multiply the rated vector of each user, therefor only common rated items
+	    remain.  Upon running the program (providing some time for loading the data) user can input the user id and number of recommended movies through the following format:<br>
+	    <br>
+              >   userId, number of recommend movies <br>
+	    <br> 
+             If there are fewer movies in the database (than requested), program will return the available items. Use 0,0 for termination.<br>
+            <br>
+	    <a href=" https://github.com/Naeemkh/Collaborative_filtering">Go to the GitHub page of the package. </a> <br><br>
+	    
+	    Reference: Breese, John S., David Heckerman, and Carl Kadie. "Empirical analysis of predictive algorithms for collaborative filtering."
+	    Proceedings of the Fourteenth conference on Uncertainty in artificial intelligence. Morgan Kaufmann Publishers Inc., 1998.
+	    
+	    
+	    
+	    </p><br>
+	    
+	   <hr>
+            </div>
+	    </div>
+	    <!-- item ends -->
+  
+  
+    	    <!-- item starts -->
+	    
+	    <tr>
+            <td valign="top">
+   	    <a data-toggle="collapse" data-target="#FEMSite" style="padding: 0">1D Finite Element Site Response Analysis (Linear + Equivalent Linear)</a>
+            <br>
+            <br> <strong>Key Words(s): </strong> Site Response, Finite Element, Linear, Equivalent Linear <br>
+	    <hr>
+	    <div class="col-md-12" >
+            <div id=FEMSite class="collapse">
+	    <br>
+	    <strong> Summary: </strong><br>
+	    <p class="text-justify"> A 1D site response analysis code to conduct linear and equivalent linear site response
+	    analysis (written in Matlab). I developed the code to have an open source platform to test different damping model and also compare
+	    simplified 3D equivalent linear method including DRM element with 1D solutions. The code solves the elastic wave
+            equation by approximating the spatial variability of the displacements and the time evolution
+	    with finite elements (1D linear element) and central differences, respectively. The Newmark implicit solution in
+	    time domain is also implemented. Here are some features of the program:
+	    <li> FE (1D linear element) + Central differences (time) </li>
+	    <li> No limitations in number of soil layers and properties</li>
+	    <li> Equivalent linear method with user defined damping and shear modules degredation curve</li>
+	    <li> Rayleigh, Extended Rayleigh and BKT dampings model</li>
+	    <li> Different plotting options for comparison purposes</li>
+	    <li> Wave traveling animation generator</li>
+	    <li> Wave traveling snapshot plots</li>
+	    <li> Automatic name and serial number generator to save the resutls</li>
+	    <li> Verified with Deepsoil and Seismosoil</li><br>
+	    <a href="https://github.com/Naeemkh/SiteResponse_FEM">Go to the GitHub page of the package. </a> 
+
+	    
+	    
+	    </p><br>
+	    
+	   <hr>
+            </div>
+	    </div>
+	    <!-- item ends -->
+	    
+	    
  
    	    <!-- item starts -->
 	    
@@ -143,6 +223,32 @@
 	    
 	    
 	   <a href="https://github.com/Naeemkh/DataProcessingMatlabShell">Go to the GitHub page of the package. </a> 
+	   
+            </div>
+	    </div>
+	    <hr>
+	    <!-- item ends -->
+	    
+	    
+	      	    <!-- item starts -->
+	    
+	    <tr>
+            <td valign="top">
+   	    <a data-toggle="collapse" data-target="#psha" style="padding: 0"> Probabilistic Seismic Hazard Analysis (PSHA)</a>
+            <br>
+            <br> <strong>Key Words(s): </strong> PSHA, GMPE, Hazard Curve, MATLAB
+	    <br>
+	   
+	    <div class="col-md-12" >
+            <div id=psha class="collapse">
+	    <br>
+	    <strong> Summary: </strong><br>
+	    <p class="text-justify"> A Matlab code for conducting Probabilistic Seismic Hazard Analysis. Seismic source could be point, line, area source or any number and combination of them.
+	    Tavakoli and Pezeshk (2005) GMPE is implemented. However, one cand add his/her own GMPE. Final results are the plot of
+	    study region, source-to-site distance distribution and hazard curve.</p><br>
+	    
+	    
+	   <a href="https://github.com/Naeemkh/PSHA">Go to the GitHub page of the package. </a> 
 	   
             </div>
 	    </div>

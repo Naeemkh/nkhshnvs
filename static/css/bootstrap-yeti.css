@@ -7069,3 +7069,9 @@ input[type="checkbox"] {
   color: #222222;
 }
 
+/*! Added by Naeem  */
+
+li{
+    margin: 10px 0;
+}
+
